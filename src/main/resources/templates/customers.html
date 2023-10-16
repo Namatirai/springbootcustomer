@@ -1,0 +1,18 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Customer</title>
+</head>
+<body>
+<h1>Customers</h1>
+<h2>hjadha</h2>
+
+<ul th:each="customer: ${customers}">
+    <li th:text="${customer.name + ' ' + customer.age + customer.email }"></li>
+</ul>
+</body>
+</html>
